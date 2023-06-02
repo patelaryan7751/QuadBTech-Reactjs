@@ -21,13 +21,8 @@ export default function Home() {
         setIsLoading(false);
       }
     };
-
     fetchData();
   }, []);
-
-  useEffect(() => {
-    console.log(data, "hi");
-  }, [data]);
   return (
     <>
       {isLoading ? (
